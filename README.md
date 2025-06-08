@@ -6,7 +6,6 @@ Bienvenue dans ce dépôt consacré à l'**Intelligence Artificielle Générativ
 - **Des projets basics et avancés basés sur LangChain et les LLMs + deployment**
 
 
-```markdown
 # Concepts de Traitement du Langage Naturel (NLP)
 
 Ce document couvre les techniques fondamentales de prétraitement et de représentation de texte en NLP. Voici une explication détaillée :
