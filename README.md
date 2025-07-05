@@ -178,4 +178,84 @@ Les mots proches en sens ont des vecteurs similaires.
 ## 🔄 Flux d’information complet
 
 ### 📘 Dans l'Encodeur :
+Mots → Embeddings → + Position
+→ Multi-Head Attention
+→ Add & Norm
+→ Feed Forward
+→ Add & Norm
+→ Sortie
+### 📘 Dans le decodeur :
+Mots → Embeddings → + Position
+→ Masked Multi-Head Attention
+→ Add & Norm
+→ Attention sur Encodeur
+→ Add & Norm
+→ Feed Forward
+→ Add & Norm
+→ Linear + Softmax
+
+---
+
+## 🚀 Pourquoi cette architecture est révolutionnaire ?
+
+### 🏎️ 1. Parallélisation
+
+- Contrairement aux anciens modèles (RNN/LSTM) qui lisaient mot par mot, les Transformers lisent tout **en parallèle**.  
+**Analogie** : Lire une page d’un coup vs. lettre par lettre.
+
+---
+
+### 🔍 2. Attention Globale
+
+- Chaque mot peut se connecter à tous les autres.  
+**Analogie** : Voir le puzzle entier d’un coup.
+
+---
+
+### 🧰 3. Flexibilité
+
+- Peut gérer des phrases de toute longueur.  
+**Analogie** : Un élastique qui s’adapte au contenu.
+
+---
+
+## 🧪 Exemples d’utilisation
+
+| 🔧 Cas d’usage         | 🟢 Entrée                          | 🔵 Sortie                                               |
+|------------------------|-----------------------------------|----------------------------------------------------------|
+| Traduction             | "Hello, how are you?"            | "Bonjour, comment allez-vous ?"                         |
+| Génération de texte    | "Il était une fois"              | "Il était une fois un royaume lointain..."              |
+| Résumé de texte        | Article de presse                | Résumé en 3 phrases                                     |
+
+---
+
+## 🎻 Métaphore Globale : Un Orchestre
+
+| Élément réel       | Équivalent Transformer              |
+|--------------------|-------------------------------------|
+| Musiciens          | Les mots                            |
+| Chef d’orchestre   | Le mécanisme d’attention            |
+| Partitions         | Les embeddings                      |
+| Placement sur scène| Encodage positionnel                |
+| Symphonie finale   | Texte généré                        |
+
+---
+
+## 👓 Analogie avec la lecture humaine
+
+Phrase : _"Marie a donné sa pomme rouge à Jean car il avait faim"_  
+Ton cerveau :
+
+- **Embedding** : comprend chaque mot  
+- **Position** : identifie l’ordre  
+- **Attention** : fait le lien "sa" → Marie, "il" → Jean  
+- **Contexte** : comprend le besoin → don
+
+👉 Les Transformers imitent ce processus cognitif.
+
+---
+
+🧾 _Créé par KOUAME AGOUALE JOHAN_  
+📍 Bingerville, Côte d’Ivoire  
+📧 johankouame10@gmail.com
 
